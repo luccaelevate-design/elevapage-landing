@@ -121,7 +121,7 @@ const Contact = () => {
                   Para emergências e quebras de equipamentos
                 </p>
                 <div className="text-2xl font-bold text-industrial-yellow">
-                  (11) 9999-0000
+                  (11) 98550-8149
                 </div>
               </CardContent>
             </Card>
