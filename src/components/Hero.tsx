@@ -29,9 +29,11 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-in slide-in-from-bottom-8 duration-1000 delay-400">
-            <Button size="lg" variant="industrial" className="min-w-[200px]">
-              Solicitar Orçamento
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button size="lg" variant="industrial" className="min-w-[200px]" asChild>
+              <a href="http://wa.me/5511985508149" target="_blank" rel="noopener noreferrer">
+                Solicitar Orçamento
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
             
             <Button size="lg" variant="outline" className="min-w-[200px] border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
