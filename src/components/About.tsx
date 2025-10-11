@@ -1,37 +1,27 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Truck, Users, Shield, Award } from "lucide-react";
-
 const About = () => {
-  const features = [
-    {
-      icon: Truck,
-      title: "Ampla Frota",
-      description: "Mais de 200 empilhadeiras disponíveis para locação e venda",
-    },
-    {
-      icon: Users,
-      title: "Equipe Especializada",
-      description: "Técnicos certificados e treinamento completo para operadores",
-    },
-    {
-      icon: Shield,
-      title: "Segurança Total",
-      description: "Equipamentos com certificação de segurança e manutenção preventiva",
-    },
-    {
-      icon: Award,
-      title: "Qualidade Garantida",
-      description: "Peças originais e serviços com garantia estendida",
-    },
-  ];
-
-  return (
-    <section id="sobre" className="py-20 bg-gradient-subtle">
+  const features = [{
+    icon: Truck,
+    title: "Ampla Frota",
+    description: "Mais de 200 empilhadeiras disponíveis para locação e venda"
+  }, {
+    icon: Users,
+    title: "Equipe Especializada",
+    description: "Técnicos certificados e treinamento completo para operadores"
+  }, {
+    icon: Shield,
+    title: "Segurança Total",
+    description: "Equipamentos com certificação de segurança e manutenção preventiva"
+  }, {
+    icon: Award,
+    title: "Qualidade Garantida",
+    description: "Peças originais e serviços com garantia estendida"
+  }];
+  return <section id="sobre" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Sobre a EmpilhaMax
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Sobre a DG Empilhadeiras</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Há mais de 20 anos no mercado, somos referência em soluções completas para movimentação de cargas. 
             Oferecemos empilhadeiras novas e usadas, locação, manutenção especializada e treinamento de operadores.
@@ -39,8 +29,7 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {features.map((feature, index) => (
-            <Card key={index} className="border-none shadow-industrial hover:shadow-yellow transition-all duration-300 hover:-translate-y-2">
+          {features.map((feature, index) => <Card key={index} className="border-none shadow-industrial hover:shadow-yellow transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-6 text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-industrial rounded-full mb-4">
                   <feature.icon className="h-8 w-8 text-industrial-yellow-foreground" />
@@ -52,8 +41,7 @@ const About = () => {
                   {feature.description}
                 </p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -102,8 +90,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
