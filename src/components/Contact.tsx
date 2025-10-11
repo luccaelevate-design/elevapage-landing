@@ -23,7 +23,7 @@ const Contact = () => {
       icon: MapPin,
       title: "Endereço",
       content: "R. Carana - Vila Jeriva",
-      subcontent: "São Paulo - SP, 01234-567",
+      subcontent: "Várzea Paulista - SP, 13225-432",
     },
     {
       icon: Clock,
