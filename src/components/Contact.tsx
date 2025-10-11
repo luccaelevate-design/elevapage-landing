@@ -22,7 +22,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Endereço",
-      content: "Rua Industrial, 1234",
+      content: "R. Carana - Vila Jeriva",
       subcontent: "São Paulo - SP, 01234-567",
     },
     {
