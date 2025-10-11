@@ -113,14 +113,19 @@ const Contact = () => {
             </Card>
 
             {/* Map placeholder */}
-            <Card className="border-none shadow-industrial">
+            <Card className="border-none shadow-industrial overflow-hidden">
               <CardContent className="p-0">
-                <div className="h-64 bg-muted rounded-lg flex items-center justify-center">
+                <a 
+                  href="https://share.google/16TaD3M1nPennahxz" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block h-64 bg-muted rounded-lg flex items-center justify-center hover:bg-muted/80 transition-colors"
+                >
                   <div className="text-center">
-                    <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-2" />
-                    <p className="text-muted-foreground">Localização no Mapa</p>
+                    <MapPin className="h-12 w-12 text-primary mx-auto mb-2" />
+                    <p className="text-primary font-medium">Ver no Google Maps</p>
                   </div>
-                </div>
+                </a>
               </CardContent>
             </Card>
           </div>
