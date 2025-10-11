@@ -4,37 +4,29 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: Phone,
-      title: "Telefone",
-      content: "(11) 98550-8149",
-      subcontent: "(11) 98765-4321",
-    },
-    {
-      icon: Mail,
-      title: "E-mail",
-      content: "contato@empilhamax.com.br",
-      subcontent: "vendas@empilhamax.com.br",
-    },
-    {
-      icon: MapPin,
-      title: "Endereço",
-      content: "R. Carana - Vila Jeriva",
-      subcontent: "Várzea Paulista - SP, 13225-432",
-    },
-    {
-      icon: Clock,
-      title: "Horário",
-      content: "Seg - Sex: 7h às 18h",
-      subcontent: "Sáb: 8h às 12h",
-    },
-  ];
-
-  return (
-    <section id="contato" className="py-20">
+  const contactInfo = [{
+    icon: Phone,
+    title: "Telefone",
+    content: "(11) 98550-8149",
+    subcontent: "(11) 98765-4321"
+  }, {
+    icon: Mail,
+    title: "E-mail",
+    content: "contato@empilhamax.com.br",
+    subcontent: "vendas@empilhamax.com.br"
+  }, {
+    icon: MapPin,
+    title: "Endereço",
+    content: "R. Carana - Vila Jeriva",
+    subcontent: "Várzea Paulista - SP, 13225-432"
+  }, {
+    icon: Clock,
+    title: "Horário",
+    content: "Seg - Sex: 7h às 18h",
+    subcontent: "Sáb: 8h às 12h"
+  }];
+  return <section id="contato" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
@@ -81,11 +73,7 @@ const Contact = () => {
 
               <div className="space-y-2">
                 <Label htmlFor="message">Mensagem</Label>
-                <Textarea 
-                  id="message" 
-                  placeholder="Descreva suas necessidades..."
-                  className="min-h-[120px]"
-                />
+                <Textarea id="message" placeholder="Descreva suas necessidades..." className="min-h-[120px]" />
               </div>
 
               <Button className="w-full" size="lg" variant="industrial">
@@ -97,18 +85,16 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {contactInfo.map((info, index) => (
-                <Card key={index} className="border-none shadow-industrial hover:shadow-yellow transition-all duration-300">
+              {contactInfo.map((info, index) => <Card key={index} className="border-none shadow-industrial hover:shadow-yellow transition-all duration-300">
                   <CardContent className="p-6 text-center">
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-industrial rounded-full mb-4">
                       <info.icon className="h-8 w-8 text-industrial-yellow-foreground" />
                     </div>
                     <h3 className="font-semibold text-primary mb-2">{info.title}</h3>
                     <p className="text-foreground font-medium">{info.content}</p>
-                    <p className="text-muted-foreground text-sm">{info.subcontent}</p>
+                    
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
 
             {/* Emergency Contact */}
@@ -140,8 +126,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
