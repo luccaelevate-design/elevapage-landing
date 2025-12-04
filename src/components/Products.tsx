@@ -35,7 +35,7 @@ const Products = () => {
     "Manutenção preventiva e corretiva",
     "Peças originais e genuínas",
     "Treinamento de operadores",
-    "Suporte técnico 24h",
+    "Suporte técnico",
   ];
 
   return (
