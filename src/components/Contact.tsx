@@ -14,7 +14,7 @@ const Contact = () => {
     icon: Mail,
     title: "Whastapp",
     content: "(11) 98550-8149",
-    subcontent: "vendas@empilhamax.com.br"
+    subcontent: "vendas@dgempilhadeiras.com.br"
   }, {
     icon: MapPin,
     title: "Endereço",
@@ -58,7 +58,7 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="email">E-mail</Label>
-                  <Input id="email" type="email" placeholder="seu@email.com" href="https://wa.me/5511985508149"/>
+                  <Input id="email" type="email" placeholder="seu@email.com" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">Telefone</Label>
