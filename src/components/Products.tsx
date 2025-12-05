@@ -35,7 +35,7 @@ const Products = () => {
     "Manutenção preventiva e corretiva",
     "Peças originais e genuínas",
     "Treinamento de operadores",
-    "Suporte técnico 24h",
+    "Suporte técnico",
   ];
 
   return (
@@ -83,6 +83,7 @@ const Products = () => {
               </CardContent>
               <CardFooter className="p-6 pt-0">
                 <Button className="w-full" variant="outline">
+                  <a href="http://wa.me/5511985508149" target="_blank" rel="noopener noreferrer">
                   Saiba Mais
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -114,6 +115,7 @@ const Products = () => {
                 Nossa equipe está pronta para desenvolver a solução ideal para sua empresa
               </p>
               <Button size="lg" variant="industrial">
+                <a href="http://wa.me/5511985508149" target="_blank" rel="noopener noreferrer">
                 Falar com Especialista
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
