@@ -12,8 +12,8 @@ const Contact = () => {
     subcontent: "(11) 98765-4321"
   }, {
     icon: Mail,
-    title: "E-mail",
-    content: "contato@empilhamax.com.br",
+    title: "Whastapp",
+    content: "(11) 98550-8149",
     subcontent: "vendas@empilhamax.com.br"
   }, {
     icon: MapPin,
@@ -23,8 +23,8 @@ const Contact = () => {
   }, {
     icon: Clock,
     title: "Horário",
-    content: "Seg - Sex: 7h às 18h",
-    subcontent: "Sáb: 8h às 12h"
+    content: "Seg - Sex: 7h às 17h",
+    subcontent: "Sáb: 7h às 13h"
   }];
   return <section id="contato" className="py-20">
       <div className="container mx-auto px-4">
@@ -58,7 +58,7 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="email">E-mail</Label>
-                  <Input id="email" type="email" placeholder="seu@email.com" />
+                  <Input id="email" type="email" placeholder="seu@email.com" href="https://wa.me/5511985508149"/>
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">Telefone</Label>
@@ -116,7 +116,7 @@ const Contact = () => {
             <Card className="border-none shadow-industrial overflow-hidden">
               <CardContent className="p-0">
                 <a 
-                  href="https://share.google/16TaD3M1nPennahxz" 
+                  href="https://www.google.com/maps/place/DG+Empilhadeiras/@-23.2265044,-46.8521221,17.5z/data=!4m6!3m5!1s0x94cf213038a148a7:0xeacf75000ab00e6!8m2!3d-23.2265653!4d-46.8517182!16s%2Fg%2F11sffb13rk?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block h-64 bg-muted rounded-lg flex items-center justify-center hover:bg-muted/80 transition-colors"
