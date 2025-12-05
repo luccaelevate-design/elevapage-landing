@@ -38,49 +38,6 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <Card className="border-none shadow-industrial">
-            <CardHeader>
-              <CardTitle className="text-2xl text-primary">Solicitar Orçamento</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Nome Completo</Label>
-                  <Input id="name" placeholder="Seu nome" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="company">Empresa</Label>
-                  <Input id="company" placeholder="Nome da empresa" />
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="email">E-mail</Label>
-                  <Input id="email" type="email" placeholder="seu@email.com" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Telefone</Label>
-                  <Input id="phone" placeholder="(11) 99999-9999" />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="service">Tipo de Serviço</Label>
-                <Input id="service" placeholder="Ex: Locação, Venda, Manutenção" />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message">Mensagem</Label>
-                <Textarea id="message" placeholder="Descreva suas necessidades..." className="min-h-[120px]" />
-              </div>
-
-              <Button className="w-full" size="lg" variant="industrial">
-                Enviar Solicitação
-              </Button>
-            </CardContent>
-          </Card>
 
           {/* Contact Information */}
           <div className="space-y-8">
@@ -92,6 +49,8 @@ const Contact = () => {
                     </div>
                     <h3 className="font-semibold text-primary mb-2">{info.title}</h3>
                     <p className="text-foreground font-medium">{info.content}</p>
+                    <p className="text-foreground font-small">{info.subcontent}</p>
+                    <a href="http://wa.me/5511985508149" target="_blank" rel="noopener noreferrer">
                     
                   </CardContent>
                 </Card>)}

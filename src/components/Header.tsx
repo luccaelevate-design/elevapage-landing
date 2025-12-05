@@ -37,8 +37,14 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline">Orçamento</Button>
-            <Button variant="industrial">Contato</Button>
+            <Button variant="outline">
+              <a href="http://wa.me/5511985508149" target="_blank" rel="noopener noreferrer">
+                Orçamento
+              </Button>
+            <Button variant="industrial">
+              <a href="http://wa.me/5511985508149" target="_blank" rel="noopener noreferrer">
+                Contato
+              </Button>
           </div>
 
           {/* Mobile menu button */}
