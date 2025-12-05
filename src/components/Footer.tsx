@@ -17,19 +17,14 @@ const Footer = () => {
     "Manutenção Técnica",
     "Peças Originais",
     "Treinamento",
-    "Suporte 24h",
+    "Suporte Técnico",
   ];
 
-  const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-  ];
 
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-industrial-yellow">DG Empilhadeiras</h3>
@@ -49,23 +44,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-industrial-yellow">Links Rápidos</h4>
-            <ul className="space-y-2">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href={link.href}
-                    className="text-primary-foreground/80 hover:text-industrial-yellow transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Services */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-industrial-yellow">Serviços</h4>
@@ -78,33 +56,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-industrial-yellow">Newsletter</h4>
-            <p className="text-primary-foreground/80 text-sm">
-              Receba novidades sobre equipamentos e promoções especiais.
-            </p>
-            <div className="space-y-3">
-              <Input 
-                placeholder="Seu e-mail"
-                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/60"
-              />
-              <Button variant="industrial" className="w-full">
-                Inscrever-se
-              </Button>
-            </div>
-            <div className="flex space-x-3 pt-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-industrial-yellow hover:text-primary transition-all duration-300"
-                >
-                  <social.icon className="h-5 w-5" />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
 
