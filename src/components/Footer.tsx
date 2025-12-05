@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-industrial-yellow">EmpilhaMax</h3>
+            <h3 className="text-2xl font-bold text-industrial-yellow">DG Empilhadeiras</h3>
             <p className="text-primary-foreground/80">
               Há mais de 20 anos oferecendo as melhores soluções em empilhadeiras 
               para empresas de todos os portes.
@@ -112,7 +112,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-primary-foreground/80 text-sm">
-            © 2025 EmpilhaMax. Todos os direitos reservados.
+            © 2025 DG Empilhadeiras. Todos os direitos reservados.
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-primary-foreground/80 hover:text-industrial-yellow transition-colors">

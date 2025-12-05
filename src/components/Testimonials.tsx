@@ -16,7 +16,7 @@ const Testimonials = () => {
       name: "Ana Santos",
       position: "Diretora de Operações",
       company: "Armazéns São Paulo",
-      content: "A EmpilhaMax revolucionou nossa operação. Equipamentos modernos e suporte técnico excepcional.",
+      content: "A DG Empilhadeiras revolucionou nossa operação. Equipamentos modernos e suporte técnico excepcional.",
       rating: 5,
       initials: "AS",
     },
@@ -38,7 +38,7 @@ const Testimonials = () => {
             O Que Nossos Clientes Dizem
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Depoimentos de empresas que confiam na EmpilhaMax para suas operações
+            Depoimentos de empresas que confiam na DG Empilhadeiras para suas operações
           </p>
         </div>
 
