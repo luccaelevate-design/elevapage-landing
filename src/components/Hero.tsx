@@ -35,11 +35,6 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
-            
-            <Button size="lg" variant="outline" className="min-w-[200px] border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <Play className="mr-2 h-5 w-5" />
-              Assistir Vídeo
-            </Button>
           </div>
 
           {/* Stats */}
