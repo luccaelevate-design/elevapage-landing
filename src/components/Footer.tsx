@@ -40,15 +40,11 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-industrial-yellow" />
-                <span className="text-sm">(11) 3456-7890</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-industrial-yellow" />
-                <span className="text-sm">contato@empilhamax.com.br</span>
+                <span className="text-sm">(11) 98550-8149</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-industrial-yellow" />
-                <span className="text-sm">São Paulo - SP</span>
+                <span className="text-sm">Várzea Paulista - SP</span>
               </div>
             </div>
           </div>
@@ -116,7 +112,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-primary-foreground/80 text-sm">
-            © 2024 EmpilhaMax. Todos os direitos reservados.
+            © 2025 EmpilhaMax. Todos os direitos reservados.
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-primary-foreground/80 hover:text-industrial-yellow transition-colors">
